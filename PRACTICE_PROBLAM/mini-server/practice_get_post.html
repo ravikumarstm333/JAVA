@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Get Post</title>
+</head>
+
+<body>
+    name:<input type="text" id="name">
+    <button onClick="SubmitButton()" id="Submit">Submit</button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        const name = document.getElementById("name");
+        const submit = document.getElementById("Submit");
+        // fetch("http://localhost:3000/data")
+        //     .then(res => res.json())
+        //     .then(data => console.log(data));
+        function SubmitButton(){
+            console.log("Button cliked..")
+                axios.post("http://localhost:3000/data",{
+                    name: name.value
+                },
+                    {
+                        headers: {
+                            "Content-Type": "application/json"
+                        }
+                    }
+                )
+                    .then(res => console.log(res.data))
+                    .catch(err => console.log(err))
+
+            // fetch("http://localhost:3000/data", {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": "application/json"
+            //     },
+            //     body: JSON.stringify({
+            //         name: name.value
+            //     })
+            // })
+            //     .then(res => res.json())
+            //     .then(data => console.log(data))
+            //     .catch(err => console.log(err))
+        }
+
+    </script>
+</body>
+
+</html>
