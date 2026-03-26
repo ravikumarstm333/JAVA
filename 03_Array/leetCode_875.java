@@ -40,7 +40,6 @@ class leetCode_875 {
         System.out.print("Enter the max hours: ");
         int h=sc.nextInt();
         leetCode_875 obje = new leetCode_875();
-        obje.minEatingSpeed(arr, h);
-        
+        obje.minEatingSpeed(arr, h);  
     }
 }

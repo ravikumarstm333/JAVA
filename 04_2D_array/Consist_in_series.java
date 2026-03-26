@@ -21,21 +21,21 @@ public class Consist_in_series {
         return  false; 
     }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the row no: ");
-        int n=sc.nextInt();
-        System.out.print("Enter the Colume number: ");
-        int m=sc.nextInt();
-        int [][] matrix=new int[n][m];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                matrix[i][j]=sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter the row no: ");
+            int n = sc.nextInt();
+            System.out.print("Enter the Colume number: ");
+            int m = sc.nextInt();
+            int[][] matrix = new int[n][m];
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    matrix[i][j] = sc.nextInt();
+                }
             }
+            System.out.print("Enter the Target number: ");
+            int target = sc.nextInt();
+            Consist_in_series obj = new Consist_in_series();
+            System.out.print("The result is : " + obj.searchMatrix(matrix, target));
         }
-        System.out.print("Enter the Target number: ");
-        int target=sc.nextInt();
-        Consist_in_series obj=new Consist_in_series();
-        System.out.print("The result is : " +obj.searchMatrix(matrix,target));
-        
     }
 }
