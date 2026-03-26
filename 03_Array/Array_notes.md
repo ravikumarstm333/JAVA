@@ -48,3 +48,25 @@ int[][] matrix=new int[4][5];
     3 [0,0,0,0,0]
 ]
 ```
+<<<<<<< HEAD
+=======
+
+## Some functions
+```java
+Arrays.sort(arr);            // array sort karne ke liye
+
+Arrays.toString(arr);        // array ko string me print karne ke liye
+
+Arrays.fill(arr, 5);         // poore array me 5 fill kar deta hai
+
+Arrays.equals(arr1, arr2);   // do arrays equal hain ya nahi check
+
+Arrays.binarySearch(arr, 10); // sorted array me element search
+
+Arrays.copyOf(arr, 10);      // array copy karke new size banana
+
+Arrays.copyOfRange(arr, 1, 4); // specific range copy
+
+Arrays.stream(arr);          // array ko stream me convert
+```
+>>>>>>> 1af2563 (update files)
