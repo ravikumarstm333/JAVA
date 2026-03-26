@@ -22,7 +22,7 @@ Isliye index se access bahut fast hota hai.
 Access time: O(1)
 ```
 ## Dis Advantage
-### array ki Size ko change nahi kar sakte agar karte hai to java eak new memory me new array creat karta hai 
+### array ki Size ko change nahi kar sakte agar karte hai to java eak new memory me new array creat karta hai (heep me)
 ```java
 int[] arr=new int[3];
 int[] arr=new int[4];
